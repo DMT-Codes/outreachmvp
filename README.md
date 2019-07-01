@@ -25,3 +25,46 @@ def setup():
         text("Messages",543,385)
         text("Settings",543,585)
         
+        
+        
+        #dms page
+def setup():
+    size(640,900)
+    background(255,255,255)
+    DM_Page()
+def DM_Page(): 
+    messages="messages..."
+    Name="name of person"
+    back_button="back"
+    #profile circle
+    stroke(0,0,0)
+    ellipse(240,30,40,40)
+    rect(400,869,30,30)
+    fill(0,0,0)
+    ellipse(410,875,5,5)
+    #name of person profile
+    fill(0,0,0)
+    textSize(26)
+    text(Name,280,40)
+    textSize(15)
+    text(back_button,10,40)
+    #messages on the bottom
+    textSize(20)
+    text(messages,280,890)
+    #line accross
+    line(5,60,690,60)
+    line(440,880,470,880)
+    
+
+        
+        
+        
+
+        
+        
+        
+
+    
+   
+    
+        
