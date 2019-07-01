@@ -1,0 +1,41 @@
+def setup(): 
+   
+    size(640,900) 
+def profile():
+    test=loadImage("test1.jpg")
+    back=loadImage('back_button.png')
+    fill(255)
+    background(100,149,237) 
+    rect(320,100,300,300)#profile photo
+    rect(40,500,550,250)
+    textSize(32)
+    text('Age/Gender',50,130)
+    text('Hometown',50,200)
+    text('Bio',50,280)
+    textSize(25)
+    text('19',50,165)
+    text('Toronto',50,235)
+    textSize(20)
+    text('I like my books like',50,315)
+    text('i like my meat. JUICY!!',50,340)
+    
+
+    text('Major/School',50,430)
+    textSize(30)
+    text('Enviromental Science,Harvard University',50,475)
+    textSize(72)
+    text("Lil Swahili",150,70)
+    fill(0,255,0)
+    rect(0,810,200,130,7)
+    fill(255,0,0)
+    rect(450,810,200,130,7) 
+    fill(0)
+    textSize(30)
+    text('Resume',230,550)
+    textSize(50)
+    text('Donate',10,875)
+    text('Next',480,875)
+    image(test,320,100,width/2,height/3)
+    image(back,10,10,width/15,height/20)
+def draw():
+    profile()
