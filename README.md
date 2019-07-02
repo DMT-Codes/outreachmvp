@@ -7,6 +7,7 @@ def setup():
     ProfileStatus=True
     My_Donations= True
     homescreen()
+    frameRate(10)
 
     
 def homescreen():
@@ -285,7 +286,7 @@ def top_supporters():
     line(400, 255, 585, 255)
 
 def search1():
-
+    print("we in aearch1")
     background(255)
     search= loadImage('Search.png')
     rect(100,130,400,30,10)
@@ -320,56 +321,56 @@ def draw():
         searchindex=2
         print (searchindex)
         
-    if searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>100 and mouseY<200 and mousePressed: #searchbar
+    elif searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>100 and mouseY<200 and mousePressed: #searchbar
         search1()
         searchindex=2
         print (searchindex)
-    if searchindex== 2 and mouseX>0 and mouseX<650 and mouseY>300 and mouseY<350 and mousePressed:#searchbar1
+    elif searchindex== 2 and mouseX>0 and mouseX<650 and mouseY>300 and mouseY<350 and mousePressed:#searchbar1
         search()
         searchindex=3
         print (searchindex)
-    if searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>300 and mouseY<400 and mousePressed :
+    elif searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>300 and mouseY<400 and mousePressed :
         profilepage()
         searchindex= 4
         print (searchindex)
-    if searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>500 and mouseY<600 and mousePressed :
+    elif searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>500 and mouseY<600 and mousePressed :
         mydonations()
         searchindex= 5
         print (searchindex)
-    if searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>150 and mouseY<250 and mousePressed :
+    elif searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>150 and mouseY<250 and mousePressed :
         top_supporters()
         searchindex= 6
         print (searchindex)
-    if searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>350 and mouseY<450 and mousePressed :
+    elif searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>350 and mouseY<450 and mousePressed :
         DM_Page()
         searchindex= 7
         print (searchindex)
-    if searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>550 and mouseY<650 and mousePressed :
+    elif searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>550 and mouseY<650 and mousePressed :
         settingspage()
         searchindex= 8
         print (searchindex)
         #BACKJ BUTTONS
-    if mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==2: #homescreen
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==2: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
-    if mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==4: #homescreen
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==4: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
-    if mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==5: #homescreen
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==5: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
-    if mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==6: #homescreen
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==6: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
-    if mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==7: #homescreen
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==7: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
-    if mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==8: #homescreen
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==8: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
