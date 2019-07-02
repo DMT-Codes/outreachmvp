@@ -170,3 +170,69 @@ def top_supporters():
     stroke(255)
     line(45, 255, 215, 255)
     line(400, 255, 585, 255)
+    
+    
+    
+    
+    #dms page
+def setup():
+    size(640,900)
+    background(255,255,255)
+    DM_Page()
+def DM_Page(): 
+    messages="messages..."
+    Name="John Doe"
+    back_button="back"
+    send_button="Send"
+    background(255) 
+    #profile circle
+    stroke(0,0,0)
+    ellipse(240,30,40,40)
+    noFill()
+    rect(0,860,900,40)
+    #name of person profile
+    fill(0,0,0)
+    textSize(26)
+    text(Name,280,40)
+    textSize(15)
+    #messages on the bottom
+    textSize(20)
+    text(messages,10,890)
+    text(send_button,550,890)
+    #line accross
+    line(5,60,690,60)
+    #makingthepictureicon
+    noFill()
+    rect(470,865,30,30)
+    fill(0,0,0)
+    ellipse(475,870,5,5)
+    ellipse(485,870,5,5)
+    ellipse(495,870,5,5)
+    line(470,875,500,875)
+    textSize(10)
+    text("cam",472,885)
+    #helpicon
+    noFill()
+    ellipse(600,30,25,25)
+    textSize(25)
+    fill(0,0,0)
+    text("i",597,40)
+    #voiceicon
+    noFill()
+    ellipse(450,875,10,20)
+    line(450,886,450,895)
+    line(440,896,457,896)
+    line(445,875,455,875)
+    line(445,871,455,871)
+    line(445,879,455,879)
+    line(445,873,455,873)
+    line(445,878,455,878)
+    #dm messaging
+    noFill()
+    ellipse(30,190,40,40)
+    rect(55,165,465,50)
+    textSize(15)
+    text("Thank you for the donation for college. I really appreciate it!",60,190)
+    ellipse(590,290,40,40)
+    rect(100,285,465,50)
+    text("Your welcome, good luck in college! Keep me updated!!",130,315)
