@@ -236,3 +236,72 @@ def DM_Page():
     ellipse(590,290,40,40)
     rect(100,285,465,50)
     text("Your welcome, good luck in college! Keep me updated!!",130,315)
+    
+    
+    
+    
+    
+    def setup():
+    size(640,900)
+    settingspage()    
+def settingspage(): 
+    background(100,149,237) 
+    img= loadImage('backblack.png')
+    logo=loadImage("Logoo.png")
+    image(logo,0,50)
+    anonymous="Anonymous"
+    Name="Settings"
+    Faq="FAQ"
+    Change_Account="Change Account"
+    About="About Us"
+    music="Music"
+    yes_button= "Yes"
+    no_button= "No"
+    privacy= "Privacy"
+    notifications="Notifications"
+    security="Security"
+    log_out="Log Out"
+    pay_pal="Pay Pal Settings"
+    your_activity="Your Activity"
+    Tos="Terms of Service"
+    share_app="Share"
+    Other=""
+    invite_friends=" Invite Friends"
+    dm_settings="DM Settings"
+
+    #settings on top
+    textSize(26)
+    text(Name,280,40)
+    textSize(15)
+    image(img, 10, 10, width/15, height/20)
+    #different setting topics
+    textSize(20)
+    text(anonymous,50,150)
+    text(your_activity,50,200)
+    text(invite_friends,50,250)
+    text(music,50,300)
+    text(security,50,350)
+    text(notifications,50,400)
+    text(dm_settings,50,450)
+    text(Change_Account,50,500)
+    text(pay_pal,50,550)
+    text(share_app,50,600)
+    #text(Other,50,650)
+    text(Tos,50,670)
+    text(About,50,725)
+    text(Faq,50,790)
+    text(log_out,50,850)
+    #lineacross
+    line(0,60,640,60)
+    line(0,165,640,165)
+    line(0,215,640,215)
+    line(0,265,640,265)
+    line(0,315,640,315)
+    line(0,365,640,365)
+    line(0,415,640,415)
+    line(0,465,640,465)
+    line(0,515,640,515)
+    line(0,565,640,565)
+    line(0,615,640,615)
+    #line(0,665,640,665)
+    
