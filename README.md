@@ -1,11 +1,16 @@
 global searchindex
 searchindex=1
 
+
+import webbrowser
+
+#webbrowser.open('')
+
+FACEBOOK_APP_ID=str('<1088529684669523>')
+FACEBOOK_APP_MONEY   = str('your app money')
+
 def setup():
     size(640,900)
-    SearchStatus=True
-    ProfileStatus=True
-    My_Donations= True
     homescreen()
     frameRate(10)
 
@@ -57,7 +62,7 @@ def profilepage():
     x= loadImage('back_button.png')
     image(x, 10, 10, width/15, height/20)
 def search():
-    test=loadImage("test1.jpg")
+    test=loadImage("baby.jpg")
     back=loadImage('back_button.png')
     fill(255)
     background(100,149,237) 
@@ -140,20 +145,83 @@ def top_supporters():
     textSize(50)
     text("TOP SUPPORTERS", 110, 120)
     textSize(25)
-    text("Top One Time", 45, 250 )
-    text ("Top Consistant", 400, 250)
+    text("Top One Time Donations", 45, 250 )
+    text ("Top Donations", 400, 250)
     image(x, 10, 10, width/15, height/20)
     stroke(255)
     line(45, 255, 215, 255)
     line(400, 255, 585, 255)
     
     
+def DmPageFirst(): 
+    background(255,255,255) 
+    img= loadImage('backblack.png')
+    logo=loadImage("Logoo.png")
+    name1="Peter Parker"
+    Name="DM Page"
+    name2="Clark Kent"
+    name3="Barry Allen"
+    name4="John Stewart"
+    name5="John Jons"
+    name6= "Bruce Wayne"
+    name7="John Doe"
+    name8="Tony Stark"
+    fill(0,0,0)
+    #settings on top
+    textSize(26)
+    text(Name,280,40)
+    textSize(15)
+    image(img, 10, 10, width/15, height/20)
+    #different setting topics
+    textSize(20)
+    text(name1,50,150)
+    text(name2,50,250)
+    text(name3,50,350)
+    text(name4,50,450)
+    text(name5,50,550)
+    text(name6,50,650)
+    text(name7,50,750)
+    text(name8,50,850)
+    #text under the names
+    textSize(15)
+    text("Thanks for the donation!",50,180)
+    text("I would like to earn some tuition money!",50,280)
+    text("How much would you like to donate?",50,380)
+    text("I'm looking for at least $10,000",50,480)
+    text("I can give you as much you need!",50,580)
+    text("What college are you going to?",50,680)
+    text("I need money for college, can you help?",50,780)
+    text("Hi,how are you?",50,880)
+    #lineacross
+    line(0,60,640,60)
+    line(0,185,640,185)
+    line(0,285,640,285)
+    line(0,385,640,385)
+    line(0,485,640,485)
+    line(0,585,640,585)
+    line(0,685,640,685)
+    line(0,785,640,785)
+    line(0,885,640,885)
+    #circles around the names
+    noFill()
+    ellipse(20,150,30,30)
+    ellipse(20,250,30,30)
+    ellipse(20,350,30,30)
+    ellipse(20,450,30,30)
+    ellipse(20,550,30,30)
+    ellipse(20,650,30,30)
+    ellipse(20,750,30,30)
+    ellipse(20,850,30,30)
     
+    
+   
+   
+    #line(0,665,640,665)
     
     #dms page
 def DM_Page(): 
     messages="messages..."
-    Name="John Doe"
+    Name="Peter Parker"
     background(255) 
     #profile circle
     stroke(0,0,0)
@@ -277,16 +345,27 @@ def top_supporters():
     background(100, 149, 237)
     x= loadImage('back_button.png')
     textSize(50)
-    text("TOP SUPPORTERS", 110, 120)
+    text("TOP SUPPORTERS", 130, 120)
     textSize(25)
-    text("Top One Time", 45, 250 )
-    text ("Top Consistant", 400, 250)
+    text("Top One Time Donations", 185, 250 )
     image(x, 10, 10, width/15, height/20)
-    line(45, 255, 215, 255)
-    line(400, 255, 585, 255)
+    line(185, 255, 490, 255)
+    line(130, 130, 550, 130)
+    rect(170,300,350,200)
+    fill(0,0,0)
+    text("Kobe Petrus - $1,000,000", 185, 350)
+    text("Ellen Winfrey- $100,000", 185, 400)
+    text("God - $12,000", 185, 450)
+    fill(255,255,255)
+    rect(170,620,350,200)
+    fill(0,0,0)
+    text("Deantay - $2,000,000", 185, 660)
+    text("Kobe Petrus - $1,000,001", 185, 710)
+    text("Kav - $13,000", 185, 760)  
+    x1=loadImage('topdonations.png')
+    image(x1,200,510,300,100)
 
 def search1():
-    print("we in aearch1")
     background(255)
     search= loadImage('Search.png')
     rect(100,130,400,30,10)
@@ -342,12 +421,16 @@ def draw():
         searchindex= 6
         print (searchindex)
     elif searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>350 and mouseY<450 and mousePressed :
-        DM_Page()
+        DmPageFirst()
         searchindex= 7
+        print (searchindex)
+    elif searchindex== 7 and mouseX>0 and mouseX<640 and mouseY>150 and mouseY<200 and mousePressed :
+        DM_Page()
+        searchindex= 8
         print (searchindex)
     elif searchindex== 1 and mouseX>540 and mouseX<640 and mouseY>550 and mouseY<650 and mousePressed :
         settingspage()
-        searchindex= 8
+        searchindex= 9
         print (searchindex)
         #BACKJ BUTTONS
     elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==2: #homescreen
@@ -371,6 +454,11 @@ def draw():
         searchindex=1
         print (searchindex)
     elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==8: #homescreen
+        DmPageFirst()
+        searchindex=7
+    
+        print (searchindex)
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==9: #homescreen
         homescreen()
         searchindex=1
         print (searchindex)
