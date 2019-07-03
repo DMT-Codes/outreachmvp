@@ -374,4 +374,16 @@ def draw():
         homescreen()
         searchindex=1
         print (searchindex)
-        
+       
+ def top_supporters():
+    background(100, 149, 237)
+    x= loadImage('back.png')
+    textSize(50)
+    text("TOP SUPPORTERS", 110, 120)
+    textSize(25)
+    text("Top One Time", 45, 250 )
+    text ("Top Consistant", 400, 250)
+    image(x, 10, 10, width/15, height/20)
+    stroke(255)
+    line(45, 255, 215, 255)
+    line(400, 255, 585, 255)    
