@@ -375,3 +375,38 @@ def draw():
         searchindex=1
         print (searchindex)
         
+ def donationbutton():
+    donate_now=loadImage("DONATE NOW.png")
+    fill(255,255,255)
+    rect(10,450,600,300)
+    textSize(30)
+    fill(0,0,0)
+    text("Thank you for helping!",150,480)
+    text("Donate",240,520)
+    textSize(15)
+    text("Select an Amount",230,540)
+    line(10,545,610,545)
+    fill(90,149,237)
+    rect(30,550,70,40)
+    rect(240,550,70,40)
+    rect(140,550,70,40)
+    rect(350,550,70,40)
+    rect(450,550,100,40)
+    fill(255,255,255)
+    textSize(20)
+    text("$5",55,580)
+    text("$50",245,580)
+    text("$10",145,580)
+    rect(465,580,40,10)
+    text("$100",355,580)
+    fill(255,255,255)
+    textSize(20)
+    text(".00",520,585)
+    image(donate_now,150,630,300,100)
+    rect(465,580,40,10)
+    fill(255,255,255)
+    rect(450,550,70,40)
+         
+        
+   
+        
