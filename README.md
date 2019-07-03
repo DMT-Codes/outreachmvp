@@ -305,3 +305,74 @@ def settingspage():
     line(0,615,640,615)
     #line(0,665,640,665)
     
+    
+    
+    def setup():
+    size(640,900)
+    DmPageFirst()    
+def DmPageFirst(): 
+    background(255,255,255) 
+    img= loadImage('backblack.png')
+    logo=loadImage("Logoo.png")
+    name1="Peter Parker"
+    Name="DM Page"
+    name2="Clark Kent"
+    name3="Barry Allen"
+    name4="John Stewart"
+    name5="John Jons"
+    name6= "Bruce Wayne"
+    name7="John Doe"
+    name8="Tony Stark"
+    fill(0,0,0)
+    #settings on top
+    textSize(26)
+    text(Name,280,40)
+    textSize(15)
+    image(img, 10, 10, width/15, height/20)
+    #different setting topics
+    textSize(20)
+    text(name1,50,150)
+    text(name2,50,250)
+    text(name3,50,350)
+    text(name4,50,450)
+    text(name5,50,550)
+    text(name6,50,650)
+    text(name7,50,750)
+    text(name8,50,850)
+    #text under the names
+    textSize(15)
+    text("Thanks for the donation!",50,180)
+    text("I would like to earn some tuition money!",50,280)
+    text("How much would you like to donate?",50,380)
+    text("I'm looking for at least $10,000",50,480)
+    text("I can give you as much you need!",50,580)
+    text("What college are you going to?",50,680)
+    text("I need money for college, can you help?",50,780)
+    text("Hi,how are you?",50,880)
+    #lineacross
+    line(0,60,640,60)
+    line(0,185,640,185)
+    line(0,285,640,285)
+    line(0,385,640,385)
+    line(0,485,640,485)
+    line(0,585,640,585)
+    line(0,685,640,685)
+    line(0,785,640,785)
+    line(0,885,640,885)
+    #circles around the names
+    noFill()
+    ellipse(20,150,30,30)
+    ellipse(20,250,30,30)
+    ellipse(20,350,30,30)
+    ellipse(20,450,30,30)
+    ellipse(20,550,30,30)
+    ellipse(20,650,30,30)
+    ellipse(20,750,30,30)
+    ellipse(20,850,30,30)
+    
+    
+   
+   
+    #line(0,665,640,665)
+    
+    
