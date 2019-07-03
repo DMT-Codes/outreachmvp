@@ -398,3 +398,15 @@ def top_supporters():
     text("Deantay - $2,000,000", 185, 650)
     text("Kobe Petrus - $1,000,001", 185, 700)
     text("Kav - $13,000", 185, 750)  
+
+def mydonations():
+    background(100,149,237) 
+    x= loadImage('back_button.png')
+    textSize(50)
+    text("MY DONATIONS", 130, 150)
+    rect(75, 220, 500, 600)
+    textSize(25)
+    image(x, 10, 10, width/15, height/20)
+    fill(0,0,0)
+    text("Brian Nesquick - $1,000,000", 100, 300)
+    text("Lil Swahili- $1", 100, 400)
