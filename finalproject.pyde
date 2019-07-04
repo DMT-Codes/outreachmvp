@@ -4,8 +4,6 @@ searchindex=0
 
 import webbrowser
 
-#webbrowser.open('')
-
 FACEBOOK_APP_ID=str('<1088529684669523>')
 FACEBOOK_APP_MONEY   = str('your app money')
 
@@ -138,9 +136,9 @@ def search():
     textSize(72)
     text("Lil Swahili",150,70)
     fill(0,255,0)
-    rect(0,810,200,130,7)
+    rect(0,810,200,130)
     fill(255,0,0)
-    rect(450,810,200,130,7) 
+    rect(450,810,200,130) 
     fill(0)
     textSize(30)
     text('Resume',230,550)
@@ -399,9 +397,7 @@ def top_supporters():
     textSize(50)
     text("TOP SUPPORTERS", 130, 120)
     textSize(25)
-    text("Top One Time Donations", 185, 250 )
     image(x, 10, 10, width/15, height/20)
-    line(185, 255, 490, 255)
     line(130, 130, 550, 130)
     rect(170,300,350,200)
     fill(0,0,0)
@@ -416,6 +412,8 @@ def top_supporters():
     text("Kav - $13,000", 185, 760)  
     x1=loadImage('topdonations.png')
     image(x1,200,510,300,100)
+    x2=loadImage("onetime.png")
+    image(x2,200,190,300,100)
 
 def search1():
     background(255)
@@ -442,6 +440,38 @@ def search1():
     text('Architecture',50,450)
     img= loadImage('backblack.png')
     image(img, 10, 10, width/15, height/20)
+    
+def donationbutton():
+    donate_now=loadImage("DONATE NOW.png")
+    fill(255,255,255)
+    rect(10,450,600,300)
+    textSize(30)
+    fill(0,0,0)
+    text("Thank you for helping!",150,480)
+    text("Donate",240,520)
+    textSize(15)
+    text("Select an Amount",230,540)
+    line(10,545,610,545)
+    fill(90,149,237)
+    rect(30,550,70,40)
+    rect(240,550,70,40)
+    rect(140,550,70,40)
+    rect(350,550,70,40)
+    rect(450,550,100,40)
+    fill(255,255,255)
+    textSize(20)
+    text("$5",55,580)
+    text("$50",245,580)
+    text("$10",145,580)
+    rect(465,580,40,10)
+    text("$100",355,580)
+    fill(255,255,255)
+    textSize(20)
+    text(".00",520,585)
+    image(donate_now,150,630,300,100)
+    rect(465,580,40,10)
+    fill(255,255,255)
+    rect(450,550,70,40)
 
      
 def draw():
@@ -464,6 +494,10 @@ def draw():
     elif searchindex== 2 and mouseX>0 and mouseX<650 and mouseY>300 and mouseY<350 and mousePressed:#searchbar1
         search()
         searchindex=3
+        print (searchindex)
+    elif searchindex== 3 and mouseX>0 and mouseX<200 and mouseY>810 and mouseY<940 and mousePressed:#donayte button
+        donationbutton()
+        searchindex=10
         print (searchindex)
     elif searchindex== 1 and mouseX>0 and mouseX<400 and mouseY>300 and mouseY<400 and mousePressed :
         profilepage()
@@ -528,4 +562,17 @@ def draw():
         login()
         searchindex=0
         print (searchindex)
+    
+    elif mouseX>0 and mouseX<50 and mouseY>0 and mouseY<50 and mousePressed and searchindex==10: #signupback button
+        search()
+        searchindex=3
+        print (searchindex)
         
+    #paypal link
+    elif mouseX>150 and mouseX<550 and mouseY>630 and mouseY<850 and mousePressed and searchindex==10: #signupback button
+        search()
+        searchindex=3
+        print (searchindex)
+        webbrowser.open('https://www.paypal.me/outreachcssi')
+        
+            
