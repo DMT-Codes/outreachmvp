@@ -14,10 +14,10 @@ def setup():
     textSize(25)
     text('19',50,165)
     text('Toronto',50,235)
-    textSize(20)
+    textSize(22)
     text('I am one to strive for ',50,315)
-    text('success for myself and others',50,340)
-    
+    text('success for myself and',50,340)
+    text('others.',50,365)
     image(resume,40,500,width/1.1,height/3)
 
     text('Major/School',50,430)
@@ -34,6 +34,6 @@ def setup():
     text('Donate',10,875)
     text('Next',480,875)
     fill(255)
-    image(test,320,100,width/2,height/3)
+    image(test,325,100,width/2.2,height/3)
     image(back,10,10,width/15,height/20)
     
